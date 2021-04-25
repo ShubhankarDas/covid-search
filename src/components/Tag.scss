@@ -1,0 +1,21 @@
+.tag {
+  cursor: pointer;
+  color: grey;
+  padding: 10px 16px;
+  border-radius: 16px;
+  margin: 6px 4px;
+  border: 1px lightgrey solid;
+
+  &:hover {
+    border-color: darkgray;
+  }
+
+  &.enabled {
+    color: green;
+    border-color: green;
+
+    &:hover {
+      border-color: darkgreen;
+    }
+  }
+}

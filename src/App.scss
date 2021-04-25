@@ -1,0 +1,166 @@
+.App {
+  width: 100%;
+
+  .container {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 22px 0 22px 0;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 14px 16px;
+  }
+
+  .title {
+    margin: 0.8em 0;
+  }
+
+  .sub-title {
+    color: #555;
+    margin-bottom: 6px;
+  }
+
+  .includes-container {
+    margin: 12px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      border: 1px darkgrey solid;
+      padding: 6px 4px;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 36px;
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 12px 0px;
+    }
+
+    &__new-tags {
+      display: flex;
+
+      .input-w-button {
+        display: flex;
+        border: 1px gray solid;
+        border-radius: 16px;
+
+        input {
+          padding: 10px 16px;
+          border: none;
+          font-size: 16px;
+          border-radius: 16px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .btn {
+          border-radius: 16px;
+          margin-right: -1px;
+        }
+      }
+    }
+  }
+
+  .excludes-container {
+    display: flex;
+    margin: 24px 0;
+    flex-direction: column;
+
+    .input-w-button-wrapper {
+      display: flex;
+      margin-top: 12px;
+
+      .input-w-button {
+        width: 100%;
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .cities-container {
+    display: flex;
+    flex-direction: column;
+    .cities-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .input-w-button {
+    display: flex;
+    border: 1px gray solid;
+    border-radius: 16px;
+
+    input {
+      padding: 10px 16px;
+      border: none;
+      font-size: 16px;
+      border-radius: 16px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .btn {
+      border-radius: 16px;
+      margin-right: -1px;
+    }
+  }
+
+  .bottom-container {
+    display: flex;
+    margin-top: 22px;
+
+    input {
+      flex: 1;
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+
+    .btn {
+      font-size: 16px;
+    }
+  }
+
+  .btn {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 16px 22px;
+    border: none;
+    background: grey;
+    color: white;
+
+    &:hover {
+      background: darkgray;
+    }
+
+    &.primary-btn {
+      background: green;
+      color: white;
+
+      &:hover {
+        background: rgb(32, 100, 0);
+      }
+    }
+  }
+}
