@@ -98,9 +98,23 @@
     }
   }
 
+  .history-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    .history-list {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      margin: 4px 0;
+    }
+  }
+
   .cities-container {
     display: flex;
     flex-direction: column;
+    margin-top: 22px;
     .cities-list {
       display: flex;
       flex-wrap: wrap;
