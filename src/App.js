@@ -6,27 +6,27 @@ import Tag from "./components/Tag";
 function App() {
   const BASE = `https://twitter.com/search`;
   const KEY_MAPPING = {
-    beds: ["bed", "beds"],
-    ventilators: ["ventilator", "ventilators"],
+    Beds: ["bed", "beds"],
+    Ventilators: ["ventilator", "ventilators"],
     require: ['-"required"', '-"require"', '-"requires"'],
     need: ['-"needs"', '-"need"', '-"needed"'],
     want: ['-"wants"', '-"want"', '-"wanted"', '-"wanting"'],
   };
   const DEFAULT_STATES = {
-    includeWords: ["beds", "ventilators", "oxygen"],
+    includeWords: ["Beds", "Ventilators", "oxygen"],
     excludeWords: ["require", "need", "want"],
     cities: ["Pune", "Mumbai", "Delhi", "Agra", "Chennai", "Bangalore"],
     allIncludedWords: [
-      "beds",
-      "ventilators",
-      "oxygen",
+      "Beds",
+      "Ventilators",
+      "Oxygen",
       "Remdesivir",
-      "icu",
-      "isolation",
-      "fabiflu",
-      "plasma",
+      "ICU",
+      "Isolation",
+      "Fabiflu",
+      "Test",
+      "Plasma",
       "Favipiravir",
-      "test",
     ],
   };
 
@@ -205,6 +205,18 @@ function App() {
             <button className="btn primary-btn" onClick={() => startSearch()}>
               Search
             </button>
+          </div>
+          <div className="resources-container">
+            <h4 className="sub-title">About this website:</h4>
+            <a href="https://github.com/ShubhankarDas/covid-search">
+              Source code
+            </a>
+            <p>
+              Developed by{" "}
+              <a href="https://github.com/ShubhankarDas/covid-search">
+                Shubhankar Das
+              </a>
+            </p>
           </div>
         </div>
       </div>

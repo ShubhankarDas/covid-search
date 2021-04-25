@@ -15,7 +15,7 @@
     width: 100%;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 14px 16px;
@@ -57,13 +57,13 @@
       .input-w-button {
         display: flex;
         border: 1px gray solid;
-        border-radius: 16px;
+        border-radius: 6px;
 
         input {
           padding: 10px 16px;
           border: none;
           font-size: 16px;
-          border-radius: 16px;
+          border-radius: 6px;
 
           &:focus {
             outline: none;
@@ -71,8 +71,9 @@
         }
 
         .btn {
-          border-radius: 16px;
+          border-radius: 6px;
           margin-right: -1px;
+          padding: 12px 22px;
         }
       }
     }
@@ -103,6 +104,17 @@
     .cities-list {
       display: flex;
       flex-wrap: wrap;
+    }
+  }
+
+  .resources-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    font-size: 12px;
+
+    p {
+      margin-top: 6px;
     }
   }
 
