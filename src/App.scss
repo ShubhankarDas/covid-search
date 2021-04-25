@@ -115,6 +115,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 22px;
+
     .cities-list {
       display: flex;
       flex-wrap: wrap;
@@ -156,7 +157,8 @@
 
   .bottom-container {
     display: flex;
-    margin-top: 22px;
+    margin-top: 14px;
+    margin-bottom: 22px;
 
     input {
       flex: 1;
