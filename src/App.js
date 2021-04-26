@@ -14,7 +14,7 @@ function App() {
     want: ['-"wants"', '-"want"', '-"wanted"', '-"wanting"'],
   };
   const DEFAULT_STATES = {
-    includeWords: ["Beds", "Ventilators", "oxygen"],
+    includeWords: ["Beds", "Ventilators", "Oxygen"],
     excludeWords: ["require", "need", "want"],
     cities: ["Pune", "Mumbai", "Delhi", "Agra", "Chennai", "Bangalore"],
     allIncludedWords: [
@@ -29,7 +29,12 @@ function App() {
       "Plasma",
       "Favipiravir",
     ],
-    resources: ["https://linktr.ee/indiacovid19resources"],
+    resources: [
+      {
+        name: "linktr.ee/indiacovid19resources",
+        link: "https://linktr.ee/indiacovid19resources",
+      },
+    ],
   };
 
   const [city, setCity] = useState("");
@@ -245,6 +250,21 @@ function App() {
                 >
                   {history.city} -{" "}
                   {moment(new Date(history.timestamp)).fromNow()}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="history-container">
+            <h4 className="sub-title">Other resources:</h4>
+            <div className="history-list">
+              {DEFAULT_STATES.resources.map((resource) => (
+                <a
+                  key={resource.name}
+                  href={generateLink(resource.link)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {resource.name}
                 </a>
               ))}
             </div>
