@@ -281,7 +281,7 @@ function App() {
             <p>
               Developed by{" "}
               <a
-                href="https://github.com/ShubhankarDas/covid-search"
+                href="https://shubhankardas.me/"
                 target="_blank"
                 rel="noreferrer"
               >
