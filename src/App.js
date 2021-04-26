@@ -28,11 +28,16 @@ function App() {
       "Test",
       "Plasma",
       "Favipiravir",
+      "Tocilizumab",
     ],
     resources: [
       {
         name: "linktr.ee/indiacovid19resources",
         link: "https://linktr.ee/indiacovid19resources",
+      },
+      {
+        name: "coronatracker.in",
+        link: "https://www.coronatracker.in/",
       },
     ],
   };
