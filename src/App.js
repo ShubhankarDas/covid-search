@@ -265,7 +265,7 @@ function App() {
               {DEFAULT_STATES.resources.map((resource) => (
                 <a
                   key={resource.name}
-                  href={generateLink(resource.link)}
+                  href={resource.link}
                   target="_blank"
                   rel="noreferrer"
                 >
